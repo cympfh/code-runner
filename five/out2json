@@ -1,0 +1,6 @@
+#!/bin/bash
+
+echo "{" > datum.json
+sed -e 's/ /" /' -e 's/^/  "/' -e 's/$/,/' out >> datum.json
+echo "}" >> datum.json
+
